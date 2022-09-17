@@ -23,6 +23,6 @@ router.post('/create-checkout-session',Sequrity, Permission, async (req, res) =>
     success_url: `${'http://localhost:3000/'}/order_successful'`,
     cancel_url: `${'http://localhost:3000/'}canceled=true`,
   });
-  res.redirect(session.url);
+  res.send(session.url);
 });
 module.exports = router;
