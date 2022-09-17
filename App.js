@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/',(req,res)=>{
-    res.send('hello');
+    res.json({msg:'Hello'});
 })
 app.use('/login',Login);
 app.use('/signup',Signup);
