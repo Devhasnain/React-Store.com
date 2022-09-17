@@ -2,10 +2,10 @@
   "name": "store.com",
   "version": "0.0.1",
   "description": "this is an e commerce react web app",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "author": "Hasnain alam",
   "license": "ISC",
