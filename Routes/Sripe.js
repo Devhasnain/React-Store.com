@@ -24,7 +24,12 @@ router.post('/create-checkout-session',Sequrity, Permission, async (req, res) =>
       success_url: `${'http://localhost:3000/'}/order_successful'`,
       cancel_url: `${'http://localhost:3000/'}canceled=true`,
     });
-    res.status(200).json({url:session.url});  
+    res.status(200).json(
+      {
+        url:session.url,
+        access:true
+      }
+      );  
   } catch (error) {
     return res.status(500).json({
       msg:"Some error occured please tryagain",
