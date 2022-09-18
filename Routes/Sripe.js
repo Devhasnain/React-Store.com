@@ -21,7 +21,7 @@ router.post('/create-checkout-session',Sequrity, Permission, async (req, res) =>
         }
       }),
       mode: 'payment',
-      success_url: `${'http://localhost:3000/'}order_successful'`,
+      success_url: `${'http://localhost:3000/'}order_successful`,
       cancel_url: `${'http://localhost:3000/'}cartitems`,
     });
     res.status(200).json(
