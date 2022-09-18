@@ -21,8 +21,8 @@ router.post('/create-checkout-session',Sequrity, Permission, async (req, res) =>
         }
       }),
       mode: 'payment',
-      success_url: `${'http://localhost:3000/'}order_successful`,
-      cancel_url: `${'http://localhost:3000/'}cartitems`,
+      success_url: `${'https://react-app-project-02.netlify.app/'}order_successful`,
+      cancel_url: `${'https://react-app-project-02.netlify.app/cartitems/'}cartitems`,
     });
     res.status(200).json(
       {
